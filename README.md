@@ -13,7 +13,8 @@ This script regularly checks your battery charge and shows you a nice warning in
 
 # How to use it
 
-- Download the script and make sure it's on your `PATH`
+- Download the script with `battery_low.mp3` sound effect and make sure it's on your`PATH`
+- For right working of notification sound effect you need install [mpg123](https://www.mpg123.de/)
 - Call the script in your i3 config file: `exec --no-startup-id i3-battery-popup`
 
 # Installing on Arch Linux
@@ -47,6 +48,8 @@ Specify `-n` to use those nice pretty desktop notifications in the top right cor
       Default: `5m`
 
 - `-n` : Use notify-send for desktop notification
+
+- `-s` : Set your own notification sound effect
 
 - `-i` : Specify the icon to use with `-n`
 
